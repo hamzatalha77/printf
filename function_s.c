@@ -1,20 +1,17 @@
 #include "main.h"
 
-/**
- * print_char - Prints a character.
- *
- * This function is responsible for printing a single character specified by the
- * argument list. It takes several parameters:
- * - @types: List of arguments (not explicitly mentioned in the comment).
- * - @buffer: Buffer array used for printing.
- * - @flags: A variable that calculates active flags.
- * - @width: Width specification.
- * - @precision: Precision specification.
- * - @size: Size specifier (not explicitly mentioned in the comment).
- *
- * Return: The number of characters printed.
- */
+/************************* PRINT CHAR *************************/
 
+/**
+ * print_char - Prints a char
+ * @types: List a of arguments
+ * @buffer: Buffer array to handle print
+ * @flags:  Calculates active flags
+ * @width: Width
+ * @precision: Precision specification
+ * @size: Size specifier
+ * Return: Number of chars printed
+ */
 int print_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -22,21 +19,17 @@ int print_char(va_list types, char buffer[],
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
+/************************* PRINT A STRING *************************/
 /**
- * print_string - Print a string.
- *
- * This function is responsible for printing a string specified by the
- * argument list. It accepts several parameters:
- * - @types: List of arguments (not explicitly mentioned in the comment).
- * - @buffer: Buffer array used for printing.
- * - @flags: A variable that calculates active flags.
- * - @width: Width specification.
- * - @precision: Precision specification.
- * - @size: Size specifier (not explicitly mentioned in the comment).
- *
- * Return: The number of characters printed.
+ * print_string - Prints a string
+ * @types: List a of arguments
+ * @buffer: Buffer array to handle print
+ * @flags:  Calculates active flags
+ * @width: get width.
+ * @precision: Precision specification
+ * @size: Size specifier
+ * Return: Number of chars printed
  */
-
 int print_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
