@@ -3,9 +3,14 @@
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
- * _printf - Printf function
- * @format: format.
- * Return: Printed chars.
+ * _printf - A function similar to printf.
+ *
+ * This function takes a format string (format) and prints formatted output
+ * according to the format specifier provided in the string. It returns the
+ * number of characters printed.
+ *
+ * @format: The format string.
+ * Return: The number of characters printed.
  */
 int _printf(const char *format, ...)
 {
